@@ -13,21 +13,20 @@ void Tarefa2(int *a){
 
 }
 
-int somaMatrizes(int matrix1[4][4], int matrix2[4][4], int** matrix_result){
-	int i,j;
-	
-	for(i = 0 ; i < 4 ; i++){
-		for(j = 0 ; j < 4 ; j++){
+int somaLinhaMatrix(int matrix1[4][4], int matrix2[4][4], int *num){
+	int j;
+	int i = *num;
+	for(j = 0 ; j < 4 ; j++){
 			matrix_result[i][j] = matrix1[i][j] + matrix2[i][j];
-		}
 	}
+	
 		
 }
 
-void printMatrix(int** matrix){
+void printMatrix(int matrix[4][4]){
 	for(int i = 0 ; i < 4 ; i++){
 		for(int j = 0 ; j < 4 ; j++){
-			printf("%d", matrix[i][j]);
+			printf("%d ", matrix[i][j]);
 		}
 		printf("\n");	
 	}	
@@ -38,7 +37,7 @@ int soma(int a, int b){
 }
 
 
-int initializeMatrix(int** matrix){
+int initializeMatrix(int matrix[4][4]){
 	int i = 0;
 	int j = 0;
 	for(i = 0 ; i < 4 ; i++){
@@ -65,7 +64,9 @@ int main(){
 
 	int matrix1[4][4], matrix2[4][4],matrix3[4][4], i, j;
 	initializeMatrix(matrix1);
-	initializeMatrix(matrix2);
+//	initializeMatrix(matrix2);
+
+	printMatrix(matrix1);
 	
 	
 	
