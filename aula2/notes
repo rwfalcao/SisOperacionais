@@ -1,0 +1,6 @@
+gcc -o saida arquivo.c -pthread
+
+pthread_create(thread, attr, start_routine, arg){
+	
+}
+thread: identificador único pra a thread
