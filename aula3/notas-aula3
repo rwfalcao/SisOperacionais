@@ -1,0 +1,9 @@
+O problema do produtor-consumidor
+
+-> Dois processos compartilham um buffer comum e de tamanho fixo
+-> O produtor coloca informação no buffer
+-> O consumidor retira a informação do buffer
+
+exlucação mutua
+-somente um processo de cada vez pode usar um recurso
+-semáforo pode ser considerado um algorítmo de exclusão mutua
